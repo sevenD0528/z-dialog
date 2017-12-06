@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title">
+    <meta name="keywords" content="">
+    <script src="//cbshowhot.cdn.changbaimg.com/c9f2de1034099ab17b7/flexible.js"></script>
+    <link href="css/z_alert.css" rel="stylesheet">
+    <style type="text/css">
+        .container {
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            width: 5rem;
+            height: 5rem;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+        }
+
+        #dialogBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 2.5rem;
+            height: 0.8rem;
+            background-color: #fff;
+            border-radius: 1rem;
+            color: #000;
+            font-size: 0.32rem;
+        }
+    </style>
+    <title>Z-Dialog</title>
+</head>
+<body>
+    <div class="container">
+        <button class="dialog-btn" id="dialogBtn">Show Dialog</button>
+    </div>
+    <script src="//cbshowhot.cdn.changbaimg.com/-/adae20d1e84728e9/zepto.min.js"></script> 
+    <script src="js/z_alert.js"></script>
+    <script type="text/javascript">
+        ;(function($){
+            var demo = function() {
+                this.dialogBtn = $('#dialogBtn');
+            }
+
+            demo.prototype.init = function() {
+                var _this = this;
+
+                _this.bindEvents();
+            }
+
+            demo.prototype.bindEvents = function() {
+                var _this = this;
+                _this.dialogBtn.on('click', function() {
+                    $.dialog({
+                        content : '对话框内容对话框内容对话框内容对话框内容对话框内容对话框内容',
+                        title : 'ok',
+                        width : '5rem',
+                        height : '4rem',
+                        confirm : function() {
+                            alert('我是确定按钮');
+                            return true;
+                        },
+                        confirmText: '确定'
+                    });
+                });
+            }
+
+            new demo().init();
+            
+        })(Zepto)
+    </script>
+</body>
+</html>
