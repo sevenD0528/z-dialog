@@ -2,7 +2,7 @@
 
 ## A Zepto Plugin
 
-During the development of a H5 activity of the company, I found out that we always built the dialog by ourselves everytime. So I think it's necessary to build a plugin for the common confirm dialog.
+During the development of a H5 activity for the company, I found out that we always built the dialog by ourselves everytime, such as the css, the callback function etc. So I think it's necessary to build a unity plugin for the best benifits and conveniency of the development.
 
 
 The plugin is written built on the great Zepto.js and flexble.js which is a common lib used for our mobile development solution.
