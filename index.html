@@ -57,15 +57,15 @@
                 var _this = this;
                 _this.dialogBtn.on('click', function() {
                     $.dialog({
-                        content : '对话框内容对话框内容对话框内容对话框内容对话框内容对话框内容',
+                        content : 'Content',
                         title : 'ok',
                         width : '5rem',
                         height : '4rem',
                         confirm : function() {
-                            alert('我是确定按钮');
+                            alert('Confirm');
                             return true;
                         },
-                        confirmText: '确定'
+                        confirmText: 'confirm'
                     });
                 });
             }
