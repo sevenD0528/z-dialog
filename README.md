@@ -21,5 +21,10 @@ It can be used as below, which u can also find out in the demo index.html:
         confirmText: 'Confirm'
     });
 ```
+If u set up the title, it will look like as below:
+![img]('images/z_dialog.png')
+
+If u don't set up the title, it will look like as below:
+![img]('images/z_dialog2.png')
 
 Thanks.

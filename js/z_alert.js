@@ -1,4 +1,4 @@
-;(function($, window, undefined){
+;(function($, window){
 	var Dialog;
 
 	Dialog = (function(){
@@ -50,7 +50,7 @@
 				});
 			},
 			cancel: function() {
-
+				// not now
 			},
 			size: function() {
 				var _self = this;
@@ -90,15 +90,15 @@
 	$.fn.dialog.lookup = {i: 0};
 
 	/**
-	 * 插件的默认值
+	 * default settings of plugin
 	 */
 	$.fn.dialog.defaults = {
-	    title: '',
-	    content: 'content',
-	    width: 'auto', //宽度
-	    height: 'auto', //高度
-	    confirm: null,
-	    cancel: null,
+	    title: '', // title
+	    content: 'content', // content
+	    width: 'auto', // width
+	    height: 'auto', // height
+	    confirm: null, // confirm
+	    cancel: null, // cancel
 	    confirmText: 'OK',
 	    cancleText: 'CANCEL'
 	};
@@ -109,4 +109,4 @@
 
 	window.zDialog = $.zDialog = $.dialog = zDialog;
 
-})(window.jQuery || window.Zepto, window)
+})(window.Zepto, window)
