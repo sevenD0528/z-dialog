@@ -64,7 +64,7 @@
 				_self.dialog.removeClass('fade-in').addClass('fade-out');
 				setTimeout(function(){
 					$('body').find('.dialog-mask').remove();
-				}, 800)
+				}, 500)
 			}
 
 		};
@@ -77,7 +77,7 @@
 	        var $this = $(this),
 	            instance = $.fn.dialog.lookup[$this.data('dialog')];
 	        if (!instance) {
-	            //zepto的data方法只能保存字符串，所以用此方法解决一下
+	            //solve zepto data
 	            $.fn.dialog.lookup[++$.fn.dialog.lookup.i] = new Dialog(this,options);
 	            $this.data('dialog', $.fn.dialog.lookup.i);
 	            instance = $.fn.dialog.lookup[$this.data('dialog')];

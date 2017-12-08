@@ -88,9 +88,9 @@
 }
 
 .fade-out {
-    -webkit-animation: fadeOut 0.5s;
+    -webkit-animation: fadeOut 0.8s;
     -webkit-animation-fill-mode: forwards;
-    animation: fadeOut 0.5s; 
+    animation: fadeOut 0.8s; 
     animation-fill-mode: forwards;
 }
 
